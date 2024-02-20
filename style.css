@@ -1,14 +1,23 @@
-p  {
+
+/*
+General
+*/
+
+p, table  {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
     font-style: italic;
+
 }
 
+/*
+Nav
+*/
 .main-nav {
     margin-top: 5px;
+    padding-top: 5px;
     padding-left: 0;
     list-style: none;
-    background-color: blue;
+    background-color:#1f4cb9
 }
 
 .main-nav__item {
@@ -36,23 +45,126 @@ p  {
     content: " | ";
 }
 
+/*
+index.html
+*/
+.index-content #par1{
+    color: blue;
+}
+.index-content #par3{
+    color: red;
+    text-align: center;
+    font-style: normal;
+    
+}.index-content figure img{
+    width:40%;
+    
+}
 
-
-
-.wcag-par #par2{
+/*
+wcag.html
+*/
+.wcag #par2{
     color: blue;   
 }
 
-.wcag-content #par1 {
+.wcag-structure #par1 {
     color: red;
     text-align: center;
+    font-style: normal;
 }
 
-.wcag-content #par2 {
+.wcag-structure #par2 {
     font-style: italic;
 }
 
-.wcag-content #list {
-    color: brown;
+.wcag-structure #list {
+    color:chocolate ;
     list-style-type: upper-roman;
+    font-size:large ;
+}
+
+.wcag-structure table, .wcag-structure table li{
+    width: 100%; 
+    border-collapse: collapse;
+    list-style: none;
+    font-style: normal;
+}
+
+.wcag-structure tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.wcag-structure tr:hover {
+    background-color: #deddde;
+}
+
+.wcag-structure th {
+    background-color: #8ea5cb; 
+    color: white;
+    padding: 15px;
+    text-align: left; 
+}
+
+.wcag-structure td {
+    padding: 8px;
+    text-align: left; 
+    border: 1px solid #deddde;   
+}
+
+
+/*
+validadores.html
+*/
+
+.validadores-content ul {
+    font-size:x-large;
+    list-style: square;
+    
+}
+
+
+
+
+/*
+encuesta.html
+*/
+
+.encuesta ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.encuesta li + li {
+    margin-top: 25px;
+}
+
+.encuesta label {
+    display: block;
+}
+
+.encuesta input, textarea, select {
+    padding: 10px;
+    margin-top: 7px;
+    width: 40%;
+    border: 1px solid #deddde;
+    border-radius: 5px;
+
+}
+
+.encuesta ul #radio input{
+    width: 15px;
+}
+
+
+.encuesta button {
+    padding: 15px;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #deddde;
+    border-radius: 5px;
+    background-color: #8aa5c9; 
+    color: white;
+    font-size: 20px;
 }

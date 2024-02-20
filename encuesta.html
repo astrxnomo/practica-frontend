@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desarrollo de Sitio Web Accesibles</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav__item"><a href="index.html">Inicio</a></li>
+                <li class="main-nav__item"><a href="wcag.html">WCAG</a></li>
+                <li class="main-nav__item"><a href="validadores.html">Validadores</a></li>
+                <li class="main-nav__item"><a href="encuesta.html">Encuesta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Desarrollo de Sitio Web Accesibles</h1>
+
+        <section>
+            <h2>Encuesta sobre accesibilidad</h2>
+            <form class="encuesta" action="" method="post">
+                <ul>
+                    <li>
+                        <label for="name">¿Cuál es tu nombre?</label>
+                        <input type="text" id="name" name="user_name" placeholder="Tu nombre" />
+                    </li>
+
+                    <li>
+                        <label for="mail">¿Cuál es tu email?</label>
+                        <input type="email" id="mail" name="user_mail" />
+                    </li>
+                    
+                    <li>
+                        <label for="msg">¿En qué fecha te enteraste de la accesibilidad web?</label>
+                        <input type="date" id="date" name="user_date" />
+                    </li>
+    
+                    <li id="radio">
+                        <label for="msg">¿Consideras que es importante la accesibilidad?</label>
+    
+                        <label for="option1"><input type="radio" id="option1" name="option_si" value="si">Sí</label>
+                        <label for="option2"><input type="radio" id="option2" name="option_no" value="no">No</label>
+                        <label for="option3"><input type="radio" id="option3" name="option_unpoco" value="un-poco">Un poco</label>
+                    </li>
+    
+                    <li>
+                        <label for="select">¿Cuál principio te parecio más interesante?</label>
+                        <select id="select" name="user_interest">
+                            <option value="perceptible">Perceptible</option>
+                            <option value="operable">Operable</option>
+                            <option value="comprensible">Comprensible</option>
+                            <option value="robusto">Robusto</option>
+                        </select>
+                    </li>
+    
+                    <li>
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+        
+    </main>
+
+</body>
+</html>
