@@ -1,0 +1,58 @@
+p  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-style: italic;
+}
+
+.main-nav {
+    margin-top: 5px;
+    padding-left: 0;
+    list-style: none;
+    background-color: blue;
+}
+
+.main-nav__item {
+    display: inline-block;
+
+}
+
+.main-nav__item a{
+    font-size: larger;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover {
+    color: blue;
+}
+
+.main-nav__item a:active {
+    color: red;
+}
+
+.main-nav__item a::after {
+    content: " | ";
+}
+
+
+
+
+.wcag-par #par2{
+    color: blue;   
+}
+
+.wcag-content #par1 {
+    color: red;
+    text-align: center;
+}
+
+.wcag-content #par2 {
+    font-style: italic;
+}
+
+.wcag-content #list {
+    color: brown;
+    list-style-type: upper-roman;
+}
